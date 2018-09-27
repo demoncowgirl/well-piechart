@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>The Well</title>
+
     <style>
         body {
           width: 816px;
@@ -11,29 +12,36 @@
           margin-top: 100px;
           margin-left: 100px;
         }
-        img{
-          height:150px;
+        #logo {
+          height:180px;
           width: auto;
         }
-        ul.li {
-          padding: 2px;
+        #hand {
+          height: 200px;
+          width: auto;
         }
-
+        li {
+          width:20em;
+          margin-left: 1em;
+          padding:0 0 0 1em;
+        }
     </style>
+
 </head>
 <body>
   <div class="col-md-12">
     <div class="row justify-content-center">
-      <div class="col-4"><img src="images/WellLogo.png" alt="Well Logo"></div>
+      <div class="col-4"><img id="logo" src="images/WellLogo.png" alt="Well Logo"></div>
     </div>
+    <br><br>
     <div class="row">
-      <div class="col-4"></div>
-      <div class="col-4">
+      <div class="col-2"></div>
+      <div class="col-6">
         <br><br>
         <h1 style="color: #003554"><strong>Title</strong></h1>
-        <h4>Subtitle</h4>
+        <h4>January - December 2017</h4>
       </div>
-      <div class="col-4 mr-0"><img src="images/hand.jpg" alt="Palm of hand with "></div>
+      <div class="col-4 mr-0"><img id="hand" src="images/hand.jpg" alt="Palm of hand with "></div>
     </div>
   </div>
     <canvas id="myCanvas" class="p-4 m-5" style="border: 1px solid black;"></canvas>
@@ -41,34 +49,34 @@
       <div class="row justify-content-center">
         <div class="col-md-12">
         <div class="col-8"></div>
-        <div id="myLegend" class="col-4" style="width: 200px; height: auto; float: right; border: 1px solid black; padding: 10px"></div>
+        <div id="myLegend" class="col-4" style="width: 200px; height: auto; float: right; border: 1px solid black; padding: 10px">Legend</div>
         </div>
       </div>
     </div>
-    <div class="container p-1">
+    <div class="container">
       <ul>
         <h4><strong>Administrative</strong></h4>
-          <li><p>Payroll</p></li>
-          <li><p>Contract Services</p></li>
-          <li><p>Advertising & Promotion</p></li>
-          <li><p>Memberships & Dues</p></li>
-          <li><p>Travel & Meetings</p></li>
-          <li><p>Office Rental</p></li>
+          <li>Payroll</li>
+          <li>Contract Services</li>
+          <li>Advertising & Promotion</li>
+          <li>Memberships & Dues</li>
+          <li>Travel & Meetings</li>
+          <li>Office Rental</li>
         <h4><strong>Program & Housing</strong></h4>
-          <li><p>Groceries</p></li>
-          <li><p>Repairs & Maintenance</p></li>
-          <li><p>Furniture & Appliances</p></li>
-          <li><p>Security</p></li>
-          <li><p>Household Supplies</p></li>
+          <li>Groceries</li>
+          <li>Repairs & Maintenance</li>
+          <li>Furniture & Appliances</li>
+          <li>Security</li>
+          <li>Household Supplies</li>
         <h4><strong>Technology</strong></h4>
-          <li><p>Computer Hardware & Software</p></li>
-          <li><p>Website Registration Fees</p></li>
+          <li>Computer Hardware & Software</li>
+          <li>Website Registration Fees</li>
         <h4><strong>Executive Director</strong></h4>
-        <li><p>Salary</p></li>
-        <li><p>Health Insurance Stipend</p></li>
+        <li>Salary</li>
+        <li>Health Insurance Stipend</li>
         <h4><strong>Program Coordination & Management</strong></h4>
-        <li><p>Salary</p></li>
-        <li><p>Health Insurance Stipend</p></li></p></li>
+        <li>Salary</li>
+        <li>Health Insurance Stipend</li>
       </ul>
     </div>
     <script type="text/javascript" src="main.js"></script>
