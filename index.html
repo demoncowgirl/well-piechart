@@ -13,7 +13,7 @@
           margin-left: 100px;
         }
         #logo {
-          height:180px;
+          height:250px;
           width: auto;
         }
         #hand {
@@ -30,27 +30,30 @@
 </head>
 <body>
   <div class="col-md-12">
-    <div class="row justify-content-center">
-      <div class="col-4"><img id="logo" src="images/WellLogo.png" alt="Well Logo"></div>
+    <div class="row">
+      <div class="col-6 ml-4x"><img id="logo" src="images/WellLogo.png" alt="Well Logo"></div>
+      <div class="col-4 mr-0 mt-4"><img id="hand" src="images/hand.jpg" alt="Palm of hand with "></div>
     </div>
     <br><br>
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-2"></div>
       <div class="col-6">
-        <br><br>
         <h1 style="color: #003554"><strong>Title</strong></h1>
         <h4>January - December 2017</h4>
       </div>
-      <div class="col-4 mr-0"><img id="hand" src="images/hand.jpg" alt="Palm of hand with "></div>
+
     </div>
   </div>
-    <canvas id="myCanvas" class="p-4 m-5" style="border: 1px solid black;"></canvas>
-    <div class="container" style="w-100; margin-left: auto; margin-right: auto;">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
-        <div class="col-8"></div>
-        <div id="myLegend" class="col-4" style="width: 200px; height: auto; float: right; border: 1px solid black; padding: 10px">Legend</div>
-        </div>
+  <div class="container" style="w-100; margin-left: auto; margin-right: auto;">
+    <div class="col-md-12">
+      <div class="row">
+        <canvas id="myCanvas" class="p-4 m-5" style="border: 1px solid black;">
+          <div class="container">
+            <div class="col-8"></div>
+            <div id="myLegend" class="col-4" style="width: 200px; height: auto; float: right; border: 1px solid black; padding: 10px">Legend</div>
+         </div>
+        </canvas>
+
       </div>
     </div>
     <div class="container">
