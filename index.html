@@ -3,13 +3,30 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta charset="UTF-8">
-    <title>The Well</title>
+    <title></title>
 
     <style>
-        body {
+        body, html {
           width: 816px;
           height: 1056px;
-          margin-top: 100px;
+
+        }
+        .bg {
+            /* The image used */
+            background-image: url("images/house60.png");
+            margin-left: 10px;
+            margin-right: 10px;
+
+            /* Full height */
+            /* height: 100%; */
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        p {
+          margin: 20px;
         }
         li {
           width:30em;
@@ -40,23 +57,21 @@
 
 </head>
 <body>
+  <div class="container">
+      <div class="bg" id="background" style="width: 815px; height: auto;">
   <div class="col-md-12">
     <div class="row">
-      <div class="col-6 ml-4"><img id="logo" src="images/WellLogo.png" alt="Well Logo"></div>
+      <div class="col-6 ml-4 mt-4"><img id="logo" src="images/WellLogo.png" alt="Well Logo"></div>
       <div class="col-1"></div>
-      <div class="col-4 ml-0 mt-5"><img id="hand" src="images/hand.jpg" alt="Palm of hand with "></div>
+      <div class="col-4 ml-4 mt-4"><img id="hand" src="images/hand.jpg" alt="Palm of hand with "></div>
     </div>
-    <br><br>
+    <br><br><br>
     <div class="row">
       <div class="col-2"></div>
       <div class="col-6">
-        <h1 id="title" style="color: #003554;"><strong>Title</strong></h1>
+        <!-- <h1 id="title" style="color: #003554;"><strong>Title</strong></h1> -->
         <h4 id="subtitle">January - December 2017</h4>
       </div>
-    </div>
-    <div class-"row">
-      <p><strong>Mission:</strong>
-        The Well of Lexington provides a holistic program of safe housing, recovery support, education and healing for women exploited by sex trafficking to empower them to reach economic independence and live productive lives.<p>
     </div>
     <div class="row">
       <div class="col-1"></div>
@@ -65,54 +80,61 @@
     </div>
       <div class="col-1"></div>
     </div>
-  </div>
   <div class="container ml-0 mr-0 justify-content-start">
     <div class="col-md-12">
       <div class="row">
         <div class="col-8">
-        <canvas id="myCanvas" class="p-4 mt-4 ml-5" style="border: 1px solid black;">
+        <canvas id="myCanvas" class="p-4 mt-4 ml-5">
         </div>
         <div class="col-4">
             <div id="myLegend" class="mt-4 ml-2 mb-0 p-1" style="font-size: 12px; width: auto; height: auto; float: right; border: 1px solid black;">Legend</div>
         </div>
-        </canvas>
-      </div>
-    </div>
-  </div>
-    <div class="container">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-5">
-            <ul>
-              <h4><strong>Administrative</strong></h4>
-                <li>Payroll</li>
-                <li>Contract Services</li>
-                <li>Advertising & Promotion</li>
-                <li>Memberships & Dues</li>
-                <li>Travel & Meetings</li>
-                <li>Office Rental</li>
-              <h4><strong>Program & Housing</strong></h4>
-                <li>Groceries</li>
-                <li>Repairs & Maintenance</li>
-                <li>Furniture & Appliances</li>
-                <li>Security</li>
-                <li>Household Supplies</li>
-          </div>
-          <div class="col-1"></div>
-          <div class="col-5">
-            <h4><strong>Technology</strong></h4>
-              <li>Computer Hardware & Software</li>
-              <li>Website Registration Fees</li>
-            <!-- <h4><strong>Executive Director</strong></h4>
-            <li>Salary</li>
-            <li>Health Insurance Stipend</li> -->
-            <h4><strong>Program Coordination & Management</strong></h4>
-            <li>Salary</li>
-            <li>Health Insurance Stipend</li>
-          </ul>
+          </canvas>
         </div>
       </div>
     </div>
+        <div class-"row">
+          <p><strong>Mission:</strong>
+            The Well of Lexington provides a holistic program of safe housing, recovery support, education and healing for women exploited by sex trafficking to empower them to reach economic independence and live productive lives.<p>
+        </div>
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row bg-white">
+            <div class="col-5">
+              <ul>
+                <h4><strong>Administrative</strong></h4>
+                  <li>Payroll</li>
+                  <li>Contract Services</li>
+                  <li>Advertising & Promotion</li>
+                  <li>Memberships & Dues</li>
+                  <li>Travel & Meetings</li>
+                  <li>Office Rental</li>
+                <h4><strong>Program & Housing</strong></h4>
+                  <li>Groceries</li>
+                  <li>Repairs & Maintenance</li>
+                  <li>Furniture & Appliances</li>
+                  <li>Security</li>
+                  <li>Household Supplies</li>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5">
+              <h4><strong>Technology</strong></h4>
+                <li>Computer Hardware & Software</li>
+                <li>Website Registration Fees</li>
+              <h4><strong>Executive Director</strong></h4>
+              <li>Salary</li>
+              <li>Health Insurance Stipend</li>
+              <h4><strong>Program Coordination & Management</strong></h4>
+              <li>Salary</li>
+              <li>Health Insurance Stipend</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 var myCanvas = document.getElementById("myCanvas");
-myCanvas.width = 450;
-myCanvas.height = 450;
+myCanvas.width = 400;
+myCanvas.height = 400;
 
 var myLegend = document.getElementById("myLegend");
 
