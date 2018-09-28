@@ -1,6 +1,6 @@
 var myCanvas = document.getElementById("myCanvas");
-myCanvas.width = 600;
-myCanvas.height = 600;
+myCanvas.width = 450;
+myCanvas.height = 450;
 
 var myLegend = document.getElementById("myLegend");
 
@@ -10,11 +10,9 @@ var expenditures = {
     "Administrative": 18035.67,
     "Program & Housing": 34547.35,
     "Executive Director": 33088.45,
-    "Program Coordination & Management": 46288.20,
+    "Program Coordination & Mgmt": 46288.20,
     "Technology": 4311.38
 };
-
-var labels = ["Administrative", "Program & Housing", "Executive Director", "Program Coordination & Management", "Technology"];
 
 function drawLine(ctx, startX, startY, endX, endY){
     ctx.beginPath();
@@ -56,15 +54,6 @@ var Piechart = function(options){
             total_value += val;
           }
 
-        // if (this.options.legend){
-        //   color_index = 0;
-        //   var legendHTML = "";
-        //   for (categ in this.options.data){
-        //       legendHTML += "<div><span style='display:inline-block;width:20px;background-color:"+this.colors[color_index++]+";'>&nbsp;</span> "+categ+"</div>";
-        //   }
-        //   this.options.legend.innerHTML = legendHTML;
-        //   }
-
         var start_angle = 0;
         for (categ in this.options.data){
             val = this.options.data[categ];
@@ -77,14 +66,14 @@ var Piechart = function(options){
                 Math.min(this.canvas.width/2,this.canvas.height/2),
                 start_angle,
                 start_angle+slice_angle,
-                this.colors[color_index%this.colors.length]);
+                this.colors[color_index%this.colors.length]
+              );
 
             start_angle += slice_angle;
             color_index++;
         }
 
         start_angle = 0;
-
         for (categ in this.options.data){
             val = this.options.data[categ];
             slice_angle = 2 * Math.PI * val / total_value;
@@ -98,17 +87,25 @@ var Piechart = function(options){
             this.ctx.fillText(labelText+"%", labelX,labelY);
             start_angle += slice_angle;
         }
+                  if (this.options.legend){
+                  color_index = 0;
+                  var legendHTML = "";
+                  for (categ in this.options.data){
+                      legendHTML += "<div><span style='display:inline-block;width:25px;background-color:"+this.colors[color_index++]+";'>&nbsp;</span> "+categ+"</div>";
+                  }
+                  this.options.legend.innerHTML = legendHTML;
+              }
     }
 
 }
-
-
 
 var myPiechart = new Piechart(
     {
         canvas:myCanvas,
         data:expenditures,
-        colors:["#00A6FB","#0582CA", "#006494","#003554","#051923"]
+        colors:["#00A6FB","#696969", "#006494","#003554","#C0C0C0"],
+        legend:myLegend
     }
+
 );
 myPiechart.draw();
